@@ -1,0 +1,132 @@
+*
+{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.logo
+{
+    color: #000000;
+    margin-left: 25px;
+}
+.card{
+  width:400px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:100px;
+  text-align:center;
+  padding:30px;	
+  border:4px #67bcd8 solid;
+  border-radius:5px;	
+}
+.header
+{
+    
+    display: flex;
+    
+    justify-content: space-between;
+    padding: 10px;
+    position: sticky;
+    top:0;
+    background-color: #a1d7ec;
+
+}
+.m1
+{
+    background-color: #a1d7ec;
+
+}
+.main
+{
+    display: flex;
+    width:50%;
+    border-radius: 30px;   
+    justify-content:space-evenly;
+    padding: 10px;
+    cursor: pointer;
+}
+.w1
+{
+    margin-left:-50px;
+    text-align: center;
+}
+.w2
+{
+    font-weight: bold;
+    margin-left: 150px;
+    font-size: 50px;
+
+}
+.img1
+{
+    position: relative;
+    float:right;
+    margin-right: 50px;
+
+}
+.b1 {
+    background-color: #a1d7ec; /* Green */
+    border:solid rgb(0, 0, 0) 2px;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color: black; 
+  }
+  
+  .b1:hover {
+    background-color: black;
+    color: white;
+  }
+  .p1
+  {
+    margin-left: 360px;
+  }
+  .header2
+  {
+    background-color: white;
+  }
+  .w3
+  {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .img2
+  {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
+  .p2
+  {
+    margin-left:660px;
+  }
+  .header3
+  {
+    background-color:#a1d7ec;
+   
+    
+    
+  }
+
+  .w4
+  {
+    float:right;
+    margin-right: 50px;
+    text-align: center;
+    letter-spacing: 1px;
+
+
+  }
