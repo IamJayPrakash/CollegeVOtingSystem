@@ -16,7 +16,6 @@
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #f4f4f9;
-            color: #333;
         }
         a {
             text-decoration: none;

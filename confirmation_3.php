@@ -7,60 +7,116 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
-        .td-1 {
-            text-align: center;
-            padding-top: 20px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .card-container {
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+        }
+        .header {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding-top: 30px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 25px;
+            background-color: #a1d7ec;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 500;
+            color: #000;
+        }
+        .main {
+            display: flex;
+            gap: 15px;
+        }
+        .main p {
+            margin: 0;
+        }
+        .main p a {
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .main p a:hover {
+            background-color: #67bcd8;
+            color: white;
         }
         .card {
-            width: 280px;
-            background-color: #fff;
+            width: 80%;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: white;
+            border: 4px solid #67bcd8;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s ease-in-out;
         }
-        .card:hover {
-            transform: translateY(-5px);
+        .card h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #333;
         }
-        .card img {
+        .td-1 {
+            text-align: left;
+            padding: 10px;
+        }
+        .td-2 {
+            text-align: center;
+        }
+        table {
             width: 100%;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 10px 10px 0 0;
         }
-        .card-body {
-            padding: 20px;
-        }
-        .card-title {
-            font-size: 20px;
-            font-weight: 500;
-            margin-bottom: 10px;
-        }
-        .card-text {
+        input[type="text"], input[type="email"], input[type="number"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
             font-size: 16px;
-            color: #777;
-            margin-bottom: 15px;
         }
-        .btn-primary {
-            display: inline-block;
-            padding: 8px 20px;
-            background-color: #007bff;
-            color: #fff;
+        button {
+            padding: 10px 20px;
+            background-color: #67bcd8;
             border: none;
             border-radius: 5px;
+            color: white;
+            font-size: 16px;
             cursor: pointer;
-            text-decoration: none;
-            transition: background-color 0.3s ease-in-out;
+            transition: background-color 0.3s;
         }
-        .btn-primary:hover {
-            background-color: #0056b3;
+        button:hover {
+            background-color: #5ca3be;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .col-md-6 {
+            flex: 1;
+            min-width: 300px;
+            margin: 10px;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
         }
     </style>
 </head>

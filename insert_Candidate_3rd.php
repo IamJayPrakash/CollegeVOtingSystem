@@ -6,15 +6,108 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <style>
-      .td-1{
-          text-align: center;
-          padding-top: 20px;
-        
-      }
-      table{
-        margin:auto;
-      }
-     
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 25px;
+            background-color: #a1d7ec;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 500;
+            color: #000;
+        }
+        .main {
+            display: flex;
+            gap: 15px;
+        }
+        .main p {
+            margin: 0;
+        }
+        .main p a {
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .main p a:hover {
+            background-color: #67bcd8;
+            color: white;
+        }
+        .container {
+            padding: 50px 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .card {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid #67bcd8;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        .td-1 {
+            text-align: left;
+            padding: 10px 0;
+        }
+        .td-1 input, .td-1 select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .btn-submit {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-align: center;
+            margin: 20px 0;
+            width: 100%;
+        }
+        .btn-submit:hover {
+            background-color: #218838;
+        }
+        .img-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 <body>
     <div class="header">
@@ -71,7 +164,7 @@
                     </tr>
                     
                     <tr>
-                        <td class="td-2" id style="padding-top: 20px; padding-bottom: 40px;" ><button class="magnifyBtn" name="Submit">Submit</button></td>
+                        <td class="td-2" id style="padding-top: 20px; padding-bottom: 40px;" ><button class="btn-submit" name="Submit">Submit</button></td>
                     </tr>
                 </table>
                 <div  style="padding-top: 50px;margin-left:450px">

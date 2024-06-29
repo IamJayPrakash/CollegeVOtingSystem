@@ -31,7 +31,7 @@
 <body>
 <body>
     <div class="header">
-     <h1 class="logo">Vote</h1>   
+     <h1 class="logo">Vote </h1>   
         <div class="main">
             <p><a href="index.html"><b>Home</b></a></p>
             <p> <a href="admin.php"><b>Admin </b></a></p>

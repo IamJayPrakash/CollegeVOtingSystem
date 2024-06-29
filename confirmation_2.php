@@ -16,66 +16,109 @@
         }
         body {
             font-family: 'Poppins', sans-serif;
-            text-align: center;
+            background-color: #f4f4f9;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
         }
         .header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 25px;
+            background-color: #a1d7ec;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         .logo {
-            margin: 0;
             font-size: 24px;
+            font-weight: 500;
+            color: #000;
         }
         .main {
-            padding: 10px 0;
+            display: flex;
+            gap: 15px;
         }
-        .main a {
-            color: #fff;
-            text-decoration: none;
-            padding: 0 10px;
+        .main p {
+            margin: 0;
         }
-        .container {
-            margin-top: 20px;
+        .main p a {
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .main p a:hover {
+            background-color: #67bcd8;
+            color: white;
         }
         .card {
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
+            width: 80%;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: white;
+            border: 4px solid #67bcd8;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .card h1 {
+            text-align: center;
             margin-bottom: 20px;
-            transition: all 0.3s ease;
+            font-size: 28px;
+            color: #333;
         }
-        .card:hover {
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        .td-1 {
+            text-align: left;
+            padding: 10px;
         }
-        .card-img-top {
+        .td-2 {
+            text-align: center;
+        }
+        table {
             width: 100%;
-            height: 200px;
-            object-fit: cover;
         }
-        .card-body {
-            padding: 20px;
-        }
-        .card-title {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-        .card-text {
+        input[type="text"], input[type="email"], input[type="number"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
             font-size: 16px;
-            color: #555;
         }
-        .btn-primary {
-            background-color: #007bff;
-            color: #fff;
+        button {
+            padding: 10px 20px;
+            background-color: #67bcd8;
             border: none;
-            padding: 8px 16px;
-            border-radius: 4px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
         }
-        .btn-primary:hover {
-            background-color: #0056b3;
+        button:hover {
+            background-color: #5ca3be;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .col-md-6 {
+            flex: 1;
+            min-width: 300px;
+            margin: 10px;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
         }
     </style>
 </head>

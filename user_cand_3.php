@@ -9,76 +9,107 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f2f2f2;
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            text-align: center;
         }
-
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
         .header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 25px;
+            background-color: #a1d7ec;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
-
         .logo {
-            margin: 0;
+            font-size: 24px;
+            font-weight: 500;
+            color: #000;
         }
-
         .main {
             display: flex;
+            gap: 15px;
+        }
+        .main p {
+            margin: 0;
+        }
+        .main p a {
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .main p a:hover {
+            background-color: #67bcd8;
+            color: white;
+        }
+        .container {
+            padding: 50px 15px;
+            display: flex;
             justify-content: center;
-            margin-top: 20px;
+            align-items: center;
+            flex-direction: column;
         }
-
-        .main a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
+        .card {
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid #67bcd8;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-        .t1 {
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 20px;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
         }
-
-        .t1 th,
-        .t1 td {
+        table, th, td {
+            border: 1px solid #67bcd8;
+        }
+        th, td {
             padding: 10px;
+            text-align: center;
         }
-
-        .t1 th {
-            background-color: #333;
-            color: #fff;
+        th {
+            background-color: #67bcd8;
+            color: white;
         }
-
-        .t1 tr:nth-child(even) {
+        tr:nth-child(even) {
             background-color: #f2f2f2;
         }
-
-        .t1 tr:hover {
-            background-color: #ddd;
-        }
-
         .btn {
-            padding: 6px 12px;
-            border-radius: 4px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
             cursor: pointer;
-            text-decoration: none;
+            transition: background-color 0.3s;
         }
-
         .btn-success {
-            background-color: #4CAF50;
+            background-color: #28a745;
             color: white;
         }
-
+        .btn-success:hover {
+            background-color: #218838;
+        }
         .btn-danger {
-            background-color: #f44336;
+            background-color: #dc3545;
             color: white;
+        }
+        .btn-danger:hover {
+            background-color: #c82333;
         }
     </style>
 </head>

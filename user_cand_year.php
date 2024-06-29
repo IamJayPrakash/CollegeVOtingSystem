@@ -17,29 +17,6 @@
             box-sizing: border-box;
         }
 
-        .header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        .logo {
-            margin: 0;
-        }
-
-        .main {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .main a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
         .container {
             margin-top: 50px;
             text-align: center;
@@ -52,20 +29,54 @@
         .btn-special-2 {
             padding: 12px 24px;
             background-color: white;
-            color: hsl(243, 80%, 62%);
+            color: #2196F3; /* Blue color */
             border-radius: 6px;
-            border: 2px hsl(243, 80%, 62%) solid;
+            border: 2px solid #2196F3; /* Blue border */
             transition: transform 250ms ease-in-out;
             text-decoration: none;
             font-size: 16px;
+            display: inline-block;
+            margin-bottom: 10px;
         }
 
         .btn-special-2:hover {
-            transform: scale(1.10);
+            transform: scale(1.05);
         }
 
         .btn-special-2:active {
-            transform: scale(0.9);
+            transform: scale(0.95);
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .svg-container {
+            flex: 1 1 60%;
+            max-width: 600px;
+            margin-top: 40px;
+        }
+
+        .buttons-container {
+            flex: 1 1 35%;
+            margin-top: 40px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -80,15 +91,31 @@
         </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <a href="user_cand.php" class="btn-special-2">1<sup>st</sup> Year</a>
+        <div class="flex-container">
+            <div class="buttons-container">
+                <div class="row">
+                    <div class="col-md-12">
+                    <h2>Select Candidate Year</h2>
+
+                        <div class="card">
+                            <a href="user_cand.php"><button class="btn-special-2">1<sup>st</sup> Year</button></a>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="card">
+                            <a href="user_cand_2.php"><button class="btn-special-2">2<sup>nd</sup> Year</button></a>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="card">
+                            <a href="user_cand_3.php"><button class="btn-special-2">3<sup>rd</sup> Year</button></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-12">
-                <a href="user_cand_2.php" class="btn-special-2">2<sup>nd</sup> Year</a>
-            </div>
-            <div class="col-md-12">
-                <a href="user_cand_3.php" class="btn-special-2">3<sup>rd</sup> Year</a>
+            <div class="svg-container">
+                <!-- Display SVG image -->
+                <img src="candidate.svg" alt="Candidates SVG" style="width: 100%;">
             </div>
         </div>
     </div>

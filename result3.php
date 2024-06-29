@@ -22,8 +22,6 @@ $rs =  $stmt->fetchAll();
     <link rel="stylesheet" href="style.css">
     <style>
         .header {
-            background-color: #333;
-            color: #fff;
             padding: 20px 0;
             text-align: center;
         }
@@ -39,7 +37,6 @@ $rs =  $stmt->fetchAll();
         }
 
         .main a {
-            color: #fff;
             text-decoration: none;
             margin: 0 10px;
         }
